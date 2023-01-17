@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BancoMARNIE</title>
+    <link rel="stylesheet" href="../style/abrir-conta.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a class="cabecalho-lista-link" href="">
+            <h1 class="cabecalho-inicio">Banco<span class="cabecalho-final">MARNIE</span></h1>
+        </a>
+      
+        <ul class="cabecalho-lista">       
+            <li class="cabecalho-lista-item"><a class="cabecalho-lista-link-botao" href="">Acessar conta</a></li>
+            <li class="cabecalho-lista-item"><a class="cabecalho-lista-link-botao" href="">Quero ser Marnie</a></li>
+        </ul>
+    </header>
+    <section class="formulario">
+        <div class="formulario-container">
+            <img src="./imagens/status-1.png" alt="etapa 1/3" class="formulario-etapas">
+            <h2 class="formulario-titulo-texto">Preencha os campos abaixo para criar sua conta!</h2>
+        </div>
+        <form action="" class="principal-formulario">
+            <fieldset class="formulario-campo">
+                <label class="campo-etiqueta" for="nome">Nome</label>
+                <input class="campo-escrita" name="nome" id="nome" type="text" required>
+            </fieldset>
+            <fieldset class="formulario-campo">
+                <label class="campo-etiqueta" for="email">E-mail</label>
+                <input class="campo-escrita" type="email" name="email" id="email" required>
+            </fieldset>
+            <fieldset class="formulario-campo">
+                <label class="campo-etiqueta" for="rg">RG</label>
+                <input class="campo-escrita campo-escrita-menor" type="text" name="rg" id="rg" required>
+            </fieldset>
+            <fieldset class="formulario-campo">
+                <label class="campo-etiqueta" for="cpf">CPF (apenas números)</label>
+                <input class="campo-escrita campo-escrita-menor" name="cpf" id="cpf" type="text" required maxlength="14"
+                    minlength="11" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required>
+            </fieldset>
+            <fieldset class="formulario-campo">
+                <label class="campo-etiqueta" for="aniversario">Data de nascimento</label>
+                <input class="campo-escrita campo-escrita-menor" type="date" name="aniversario" id="aniversario"
+                    required>
+            </fieldset>
+            <fieldset class="formulario-termos">
+                <input type="checkbox" name="termos" id="termos">
+                <p>
+                    Li e estou ciente quanto às condições de tratamento dos meus dados conforme
+                    descrito na Política
+                    de
+                    Privacidade do banco.
+                </p>
+            </fieldset>
+            <div>
+                <input type="submit" value="Avançar" id="enviar" class="formulario-botao">
+            </div>
+        </form>
+    </section>
+    <footer class="rodape">
+        <section class="rodape-empresa">
+            <h2 class="rodape-titulo">O Banco Marnie</h2>
+            <ul class="rodape-lista">
+                <li>
+                    <a class="rodape-link" href="">Sobre</a>
+                </li>
+                <li>
+                    <a class="rodape-link" href="">Perguntas Frequentes</a>
+                </li>
+                <li>
+                    <a class="rodape-link" href="">Carreira</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="rodape-servicos">
+            <h2 class="rodape-titulo">Serviços</h2>
+            <ul class="rodape-lista">
+                <li>
+                    <a href="#" class="rodape-link">Conta corrente</a>
+                </li>
+                <li>
+                    <a href="#" class="rodape-link">Conta PJ</a>
+                </li>
+                <li>
+                    <a href="#" class="rodape-link">Cartão de crédito</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="rodape-contato">
+            <h2 class="rodape-titulo">Contato</h2>
+            <ul class="rodape-lista">
+                <li>
+                    <a href="#" class="rodape-link">0800 004 000 08</a>
+                </li>
+                <li>
+                    <a href="#" class="rodape-link">ajuda@bancomarnie.com.br</a>
+                </li>
+                <li>
+                    <a href="#" class="rodape-link">ouvidoria@bancomarnie.com.br</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="rodape-redes-sociais">
+            <h2 class="rodape-titulo">Acesse nossas redes</h2>
+            <ul class="rodape-lista redes-sociais-lista">
+                <li><img src="../pages/imagens/Facebook.png" alt="ícone do facebook"></li>
+                <li><img src="../pages/imagens/Youtube.png" alt="ícone do youtube"></li>
+                <li><img src="../pages/imagens/Whatsapp.png" alt="ícone do whatsapp"></li>
+                <li><img src="../pages/imagens/Instagram.png" alt="ícone do instagram"></li>
+            </ul>
+            <h2 class="rodape-logo"><span class="rodape-logo-negrito">Banco</span>Marnie</h2>
+        </section>
+    </footer>
+</body>
+
+</html>
