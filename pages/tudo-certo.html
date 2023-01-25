@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BancoMARNIE</title>
     <link rel="stylesheet" href="../style/abrir-conta.css">
+    <title>Document</title>
 </head>
 
 <body>
@@ -14,52 +14,26 @@
         <a class="cabecalho-lista-link" href="">
             <h1 class="cabecalho-inicio">Banco<span class="cabecalho-final">MARNIE</span></h1>
         </a>
-      
-        <ul class="cabecalho-lista">       
+
+        <ul class="cabecalho-lista">
             <li class="cabecalho-lista-item"><a class="cabecalho-lista-link-botao" href="">Acessar conta</a></li>
             <li class="cabecalho-lista-item"><a class="cabecalho-lista-link-botao" href="">Quero ser Marnie</a></li>
         </ul>
     </header>
     <section class="formulario">
         <div class="formulario-container">
-            <h2 class="formulario-titulo-texto">Preencha os campos abaixo para criar sua conta!</h2>
+            <h2 class="formulario-titulo">Tudo certo!</h2>
+            <img src="../imagens/Ícone celebração.png" alt="">
+            <p class="formulario-texto">
+                A conta já está criada e você vai receber todos os dados dela por email.
+                <b>Confirme o link</b> enviado por lá para começar a usar sua conta agora mesmo!
+            </p>
+            <p class="formulario-texto">
+                Se quiser baixar nosso aplicativo,
+                escaneie o código QR abaixo com a câmera do seu celular!
+            </p>
+           <img src="../imagens/Código CQ.png" alt="imagem de qr code" class="imagem-code">
         </div>
-        <form class="principal-formulario" data-formulario>
-            <fieldset class="formulario-campo">
-                <label class="campo-etiqueta" for="nome">Nome</label>
-                <input class="campo-escrita" name="nome" id="nome" type="text" required>
-            </fieldset>
-            <fieldset class="formulario-campo">
-                <label class="campo-etiqueta" for="email">E-mail</label>
-                <input class="campo-escrita" type="email" name="email" id="email" required>
-            </fieldset>
-            <fieldset class="formulario-campo">
-                <label class="campo-etiqueta" for="rg">RG</label>
-                <input class="campo-escrita campo-escrita-menor" type="text" name="rg" id="rg" required>
-            </fieldset>
-            <fieldset class="formulario-campo">
-                <label class="campo-etiqueta" for="cpf">CPF (apenas números)</label>
-                <input class="campo-escrita campo-escrita-menor" name="cpf" id="cpf" type="text" required maxlength="14"
-                    minlength="11" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required>
-            </fieldset>
-            <fieldset class="formulario-campo">
-                <label class="campo-etiqueta" for="aniversario">Data de nascimento</label>
-                <input class="campo-escrita campo-escrita-menor" type="date" name="aniversario" id="aniversario"
-                    required>
-            </fieldset>
-            <fieldset class="formulario-termos">
-                <input type="checkbox" name="termos" id="termos">
-                <p>
-                    Li e estou ciente quanto às condições de tratamento dos meus dados conforme
-                    descrito na Política
-                    de
-                    Privacidade do banco.
-                </p>
-            </fieldset>
-            <div>
-                <input type="submit" value="Avançar" id="enviar" class="formulario-botao">
-            </div>
-        </form>
     </section>
     <footer class="rodape">
         <section class="rodape-empresa">
@@ -118,7 +92,6 @@
           
         </section>
     </footer>
-    <script src="../script/script.js"></script>
 </body>
 
 </html>
